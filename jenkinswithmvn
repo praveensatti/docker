@@ -1,6 +1,6 @@
 FROM  jenkinsci/blueocean
 USER  root
-RUN apt-get install -y  wget 
+RUN apt install -y  wget 
 RUN wget --no-verbose -O /tmp/apache-maven-3.5.4-bin.tar.gz  https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz 
 RUN tar zxf /tmp/apache-maven-3.5.4-bin.tar.gz -C /opt/ 
 RUN ln -s /opt/apache-maven-3.5.4 /opt/maven/ 
